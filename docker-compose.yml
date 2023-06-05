@@ -27,7 +27,7 @@ services:
       TESTNET:           1
       CORE_DB_DSN:       "postgresql://dbname=coredb host=stellarpostgres user=stellar password=password sslmode=disable"
     ports:
-      - "11625:11625"
+      - "61022:61022"
     networks:
       - default
 
@@ -47,6 +47,6 @@ services:
       CORE_DB_DSN:       "postgres://stellar:password@stellarpostgres/coredb?sslmode=disable"
       HORIZON_DB_DSN:    "postgres://stellar:password@stellarpostgres/horizondb?sslmode=disable"
     ports:
-      - "8000:8000"
+      - "61025:61025"
     networks:
       - default
